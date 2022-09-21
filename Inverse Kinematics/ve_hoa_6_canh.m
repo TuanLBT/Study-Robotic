@@ -2,8 +2,8 @@ syms l1 l2 l3 t t1 t2 c1 s1 c2 s2 e
 l1 = 5; 
 l2 = 5;
 for t=0:0.1:12*pi
-    X = cos(6*t)*cos(t);
-    Y = cos(6*t)*sin(t);
+    X = (1+cos(6*t))*cos(t);
+    Y = (1+cos(6*t))*sin(t);
     
     c2 = (X^2 + Y^2 - l1^2 - l2^2)/(2*l1*l2); %cos(t2) = (Px^2 + Py^2 - l1^2 - l2^2)/(2*l1*l2)
     s2 = sqrt(abs(1-c2^2)); %sin(t2) = sqrt(abs(1-cos(t2)^2)) 
